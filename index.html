@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISCC - International Swiss Crypto Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <header class="flex items-center justify-between py-6">
+      <div class="flex items-center space-x-2">
+        <svg class="h-8 w-8 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 10v-1m0 0c-1.11 0-2.08-.402-2.599-1M9.401 9a2.001 2.001 0 00-1.414 1.414M14.599 9a2.001 2.001 0 011.414 1.414M12 21a9 9 0 100-18 9 9 0 000 18z" /></svg>
+        <span class="font-bold text-2xl">ISCC</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8" id="nav-menu">
+        <a href="#about" class="text-gray-600 hover:text-gray-900 font-medium nav-link">About</a>
+        <a href="#markets" class="text-gray-600 hover:text-gray-900 font-medium nav-link">Markets</a>
+        <a href="#membership" class="text-gray-600 hover:text-gray-900 font-medium nav-link">Membership</a>
+        <a href="#contact" class="text-gray-600 hover:text-gray-900 font-medium nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+          <a href="#" class="hidden md:inline-block text-gray-600 hover:text-gray-900 font-medium">Log In</a>
+          <a href="#" class="hidden md:inline-block bg-yellow-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition-colors">Sign Up</a>
+          <button class="hidden md:inline-block text-gray-600 hover:text-gray-900" id="theme-toggle-btn">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+          <button class="md:hidden" id="hamburger-btn">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          </button>
+      </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden" id="mobile-menu">
+        <nav class="flex flex-col space-y-4 mt-4">
+            <a href="#about" class="text-gray-600 hover:text-gray-900 font-medium nav-link">About</a>
+            <a href="#markets" class="text-gray-600 hover:text-gray-900 font-medium nav-link">Markets</a>
+            <a href="#membership" class="text-gray-600 hover:text-gray-900 font-medium nav-link">Membership</a>
+            <a href="#contact" class="text-gray-600 hover:text-gray-900 font-medium nav-link">Contact</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Log In</a>
+            <a href="#" class="bg-yellow-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition-colors text-center">Sign Up</a>
+            <button class="text-gray-600 hover:text-gray-900 self-center py-2" id="theme-toggle-btn-mobile">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="py-16 md:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="text-center lg:text-left" data-aos="fade-right">
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight">International<br>Swiss Crypto Club</h1>
+            <p class="text-lg text-gray-600 mt-6 max-w-md mx-auto lg:mx-0">Join our exclusive community to access the world of cryptocurrency</p>
+            <a href="#" class="inline-block bg-yellow-500 text-white font-bold py-3 px-8 rounded-lg mt-8 hover:bg-yellow-600 transition-colors">Get Started</a>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-xl crypto-card" data-aos="fade-left">
+            <div class="flex items-center space-x-3 mb-4"><div class="bg-yellow-100 p-2 rounded-lg"><svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div><h2 class="text-xl font-bold">Cryptocurrency</h2></div>
+            <div class="w-full h-48 bg-gradient-to-t from-white to-yellow-50/50 flex items-center justify-center rounded-lg mb-4"><svg class="w-full h-full text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 100 50" preserveAspectRatio="none"><path d="M 0 40 Q 5 20, 10 30 T 20 25 T 30 42 T 40 30 T 50 35 T 60 20 T 70 25 T 80 15 T 90 28 L 100 20" stroke-width="2"/></svg></div>
+            <ul><li class="flex justify-between items-center py-3"><div class="flex items-center space-x-3"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=025" alt="Bitcoin" class="h-8 w-8"/><span class="font-bold">Bitcoin</span></div><span class="font-medium">$13,53</span><span class="font-medium text-green-500">+6,3%</span></li><li class="flex justify-between items-center py-3"><div class="flex items-center space-x-3"><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025" alt="Ethereum" class="h-8 w-8"/><span class="font-bold">Ethereum</span></div><span class="font-medium">$21,81</span><span class="font-medium text-green-500">+2,4%</span></li><li class="flex justify-between items-center py-3"><div class="flex items-center space-x-3"><img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=025" alt="BNB" class="h-8 w-8"/><span class="font-bold">Binance Coin</span></div><span class="font-medium">$4,58</span><span class="font-medium text-green-500">+1,6%</span></li><li class="flex justify-between items-center py-3"><div class="flex items-center space-x-3"><img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=025" alt="Cardano" class="h-8 w-8"/><span class="font-bold">Cardano</span></div><span class="font-medium">$0,54</span><span class="font-medium text-green-500">+1,4%</span></li><li class="flex justify-between items-center py-3"><div class="flex items-center space-x-3"><img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=025" alt="ADA" class="h-8 w-8"/><span class="font-bold">ADA</span></div><span class="font-medium">$14,38</span><span class="font-medium text-green-500">+3,3%</span></li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20"><div class="text-center" data-aos="fade-up"><h2 class="text-4xl font-bold">Why Choose ISCC?</h2><p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">The International Swiss Crypto Club (ISCC) is a premier community for cryptocurrency enthusiasts, investors, and professionals in Switzerland. Our mission is to provide exclusive access to curated insights, professional-grade tools, and a network of like-minded individuals to navigate the dynamic world of digital assets.</p></div><div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"><div class="p-6" data-aos="fade-up" data-aos-delay="100"><h3 class="text-2xl font-bold">Expert Insights</h3><p class="mt-2 text-gray-600">Access market analysis from industry veterans.</p></div><div class="p-6" data-aos="fade-up" data-aos-delay="200"><h3 class="text-2xl font-bold">Pro-Grade Tools</h3><p class="mt-2 text-gray-600">Utilize our suite of advanced trading and portfolio management tools.</p></div><div class="p-6" data-aos="fade-up" data-aos-delay="300"><h3 class="text-2xl font-bold">Exclusive Community</h3><p class="mt-2 text-gray-600">Network with leading figures in the Swiss crypto space.</p></div></div></section>
+
+      <section id="markets" class="py-20 bg-gray-50 dark:bg-gray-800" data-aos="fade-up"><div class="text-center"><h2 class="text-4xl font-bold">Live Cryptocurrency Markets</h2><p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Explore real-time market data from across the globe.</p></div><div class="mt-12 overflow-x-auto"><table class="w-full text-left min-w-full"><thead><tr class="border-b-2 border-gray-200 dark:border-gray-700"><th class="p-4">#</th><th class="p-4">Name</th><th class="p-4">Price</th><th class="p-4">24h %</th><th class="p-4">Market Cap</th><th class="p-4">Volume (24h)</th></tr></thead><tbody><tr><td class="p-4">1</td><td class="p-4 flex items-center"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=025" class="h-6 w-6 mr-3"/>Bitcoin (BTC)</td><td class="p-4">$13,530.10</td><td class="p-4 text-green-500">+6.3%</td><td class="p-4">$250.5B</td><td class="p-4">$30.2B</td></tr><tr><td class="p-4">2</td><td class="p-4 flex items-center"><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=025" class="h-6 w-6 mr-3"/>Ethereum (ETH)</td><td class="p-4">$2,181.50</td><td class="p-4 text-green-500">+2.4%</td><td class="p-4">$252.1B</td><td class="p-4">$15.8B</td></tr><tr><td class="p-4">3</td><td class="p-4 flex items-center"><img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=025" class="h-6 w-6 mr-3"/>Binance Coin (BNB)</td><td class="p-4">$458.00</td><td class="p-4 text-green-500">+1.6%</td><td class="p-4">$70.2B</td><td class="p-4">$2.1B</td></tr><tr><td class="p-4">4</td><td class="p-4 flex items-center"><img src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=025" class="h-6 w-6 mr-3"/>Cardano (ADA)</td><td class="p-4">$0.54</td><td class="p-4 text-green-500">+1.4%</td><td class="p-4">$18.9B</td><td class="p-4">$0.5B</td></tr></tbody></table></div></section>
+
+      <section id="membership" class="py-20"><div class="text-center" data-aos="fade-up"><h2 class="text-4xl font-bold">Become a Member</h2><p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Choose the plan that's right for you and unlock the full potential of your crypto journey.</p></div><div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"><div class="border rounded-lg p-8 text-center hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100"><h3 class="text-2xl font-bold">Explorer</h3><p class="text-4xl font-bold my-4">$0<span class="text-lg font-medium">/mo</span></p><ul class="space-y-2 text-gray-600"><li>Community Access</li><li>Basic Market Data</li><li>Weekly Newsletter</li></ul><a href="#" class="mt-6 inline-block bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-lg hover:bg-gray-300">Sign Up</a></div><div class="border-2 border-yellow-500 rounded-lg p-8 text-center shadow-2xl scale-105" data-aos="fade-up" data-aos-delay="200"><h3 class="text-2xl font-bold">Professional</h3><p class="text-4xl font-bold my-4">$49<span class="text-lg font-medium">/mo</span></p><ul class="space-y-2 text-gray-600"><li>All Explorer Features</li><li>Advanced Trading Tools</li><li>Exclusive Webinars</li></ul><a href="#" class="mt-6 inline-block bg-yellow-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-yellow-600">Choose Plan</a></div><div class="border rounded-lg p-8 text-center hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="300"><h3 class="text-2xl font-bold">Enterprise</h3><p class="text-4xl font-bold my-4">$199<span class="text-lg font-medium">/mo</span></p><ul class="space-y-2 text-gray-600"><li>All Professional Features</li><li>API Access</li><li>Dedicated Support</li></ul><a href="#" class="mt-6 inline-block bg-gray-200 text-gray-800 font-bold py-2 px-6 rounded-lg hover:bg-gray-300">Contact Us</a></div></div></section>
+
+      <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800" data-aos="fade-up"><div class="text-center"><h2 class="text-4xl font-bold">Get In Touch</h2><p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Have questions? We're here to help.</p></div><div class="mt-12 max-w-xl mx-auto"><form class="grid grid-cols-1 gap-6"><input type="text" placeholder="Your Name" class="p-3 rounded-lg border bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500"><input type="email" placeholder="Your Email" class="p-3 rounded-lg border bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500"><textarea placeholder="Your Message" rows="5" class="p-3 rounded-lg border bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea><button type="submit" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-yellow-600 transition-colors">Send Message</button></form></div></section>
+    </main>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
