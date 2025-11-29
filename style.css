@@ -33,14 +33,16 @@ body.dark .bg-yellow-100 {
     background-color: rgba(252, 213, 53, 0.1);
 }
 
-body.dark .border {
+body.dark .border,
+body.dark #search-input {
     border-color: #4A5568;
 }
 
 body.dark input, 
-body.dark textarea {
+body.dark textarea,
+body.dark #search-input {
     background-color: #2B2D33;
-    border-color: #4A5568;
+    color: #E5E7EB;
 }
 
 body.dark .bg-gray-200 {
@@ -60,12 +62,14 @@ body.dark .bg-gray-200:hover {
 
 /* Button Hover Effect */
 a.bg-yellow-500,
-button[type="submit"] {
+button[type="submit"],
+#search-btn {
     transition: all 0.3s ease-in-out;
 }
 
 a.bg-yellow-500:hover,
-button[type="submit"]:hover {
+button[type="submit"]:hover,
+#search-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
