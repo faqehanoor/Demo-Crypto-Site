@@ -49,4 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Search Bar Mock Functionality
+  const searchBtn = document.getElementById('search-btn');
+  const searchInput = document.getElementById('search-input');
+
+  const searchFunction = () => {
+    if (searchInput.value) {
+      console.log('Searching for:', searchInput.value);
+    }
+  };
+
+  if (searchBtn && searchInput) {
+    searchBtn.addEventListener('click', searchFunction);
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        searchFunction();
+      }
+    });
+  }
 });
